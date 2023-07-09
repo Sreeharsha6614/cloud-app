@@ -1,0 +1,161 @@
+<!-- index.html -->
+<html>
+<head>
+    <!-- Your CSS and other head elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        .nav-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 9999;
+            cursor: pointer;
+        }
+        .nav-toggle .line {
+            width: 30px;
+            height: 4px;
+            background-color: black;
+            margin-bottom: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav-buttons {
+            display: none;
+            position: fixed;
+            top: 40px;
+            right: 10px;
+            z-index: 9999;
+            animation-duration: 0.5s;
+            animation-delay: 0.2s;
+            animation-fill-mode: both;
+            animation-name: slideInDown;
+        }
+        .nav-buttons button {
+            display: block; /* Update to display as block elements */
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin-bottom: 5px;
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .content {
+            margin-top: 100px;
+            text-align: center;
+            position: relative;
+        }
+
+        .welcome-image {
+            position: relative;
+            width: 100%;
+        }
+
+        .welcome-image img {
+            width: 100%;
+        }
+
+        .welcome-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .welcome-text h1 {
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family: "Arial", sans-serif;
+            text-transform: uppercase;
+        }
+
+        .welcome-text p {
+            font-size: 42px;
+            font-family: "Arial", sans-serif;
+            font-style: italic;
+        }
+
+        .menu-button,
+        .reservation-button {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        body {
+            background: linear-gradient(45deg, #ff9f00, #ff00ff, #00bfff);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Your page content -->
+    <div class="nav-toggle" onclick="toggleNav()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="nav-buttons animate__animated animate__fadeInDown" id="navButtons">
+        <button onclick="location.href='/menu'" class="animate__animated animate__fadeIn menu-button">Menu</button>
+        <button onclick="location.href='/reservation'" class="animate__animated animate__fadeIn reservation-button">Reservation</button>
+        <!-- Add more buttons for other pages -->
+    </div>
+
+    <div class="content">
+        <div class="welcome-image">
+            <img src="static/slide3.png" alt="Welcome Image">
+            <div class="welcome-text">
+                <h1>Copita</h1>
+                <p>Tapas Bar</p>
+            </div>
+        </div>
+        <p>Discover exquisite flavors and culinary delights.</p>
+        <p>Indulge in a delightful dining experience.</p>
+        <h2>About Us</h2>
+        <p>Copita Tapas Bar is a vibrant and lively destination for food enthusiasts. With a passion for Spanish cuisine, we bring you a delightful array of tapas dishes made from the finest ingredients.</p>
+
+        <h2>Our Menu</h2>
+        <p>Explore our menu and savor the authentic flavors of Spain. From traditional favorites to innovative creations, our dishes are carefully crafted to offer a memorable dining experience.</p>
+
+        <h2>Reservation</h2>
+        <p>Plan your visit to Copita Tapas Bar by making a reservation. Whether it's a romantic dinner for two or a gathering with friends, our friendly staff will ensure you have a memorable time.</p>
+
+    </div>
+
+    <!-- Your remaining HTML -->
+
+    <script>
+        function toggleNav() {
+            const navButtons = document.getElementById('navButtons');
+            if (navButtons.style.display === 'none') {
+                navButtons.style.display = 'block';
+            } else {
+                navButtons.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!-- menu.html -->
+<html>
+<head>
+    <!-- Your CSS and other head elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .menu-title {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            animation-duration: 1s;
+            animation-name: slideInDown;
+        }
+
+        .menu-items {
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .menu-item {
+            width: 300px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation-duration: 1s;
+            animation-name: fadeIn;
+        }
+
+        .menu-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .menu-item p {
+            margin: 0;
+        }
+
+        .download-button {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .download-button button {
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #ff9f00;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .home-button {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-button button {
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #00bfff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Your menu page content -->
+    <h1 class="menu-title animate__animated animate__fadeInDown">Menu</h1>
+    
+    <div class="menu-items">
+        <div class="menu-item animate__animated animate__fadeIn">
+            <img src="static/food.png" alt="FOOD">
+            <h2>FOOD</h2>
+        </div>
+
+        <div class="menu-item animate__animated animate__fadeIn">
+            <img src="static/drink.png" alt="DRINK">
+            <h2>DRINKS</h2>
+        </div>
+
+        <!-- Add more menu items as needed -->
+    </div>
+
+    <div class="download-button animate__animated animate__fadeInUp">
+        <button onclick="location.href='/static/menu.pdf'" download>Download Menu (PDF)</button>
+    </div>
+
+    <div class="home-button animate__animated animate__fadeInUp">
+        <button onclick="location.href='/'">Go to Home Page</button>
+    </div>
+
+    <!-- Your remaining HTML -->
+</body>
+</html>
