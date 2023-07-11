@@ -38,7 +38,8 @@ Now the created docker image is pushed to GitHub registry using the below steps:
 •	Tag the docker image to the GitHub registry\
 •	Push the docker image to the GitHub as shown in the image below.\
 •	Verify the image pushed in the GitHub using the GitHub portal.
- 
+ ![image](https://github.com/Sreeharsha6614/cloudapp/assets/138668665/e7b2138f-710e-4ad0-a66d-cb2af0890078)
+
  
 ## Uploading to azure as container:
 The image is uploaded to azure as follows:\
@@ -50,7 +51,8 @@ The image is uploaded to azure as follows:\
  
 ## Test/run the application:
 Run the application on the server through local or docker image or by pulling image through github or azure.
- 
+ ![image](https://github.com/Sreeharsha6614/cloudapp/assets/138668665/d856fb12-cc80-4b56-8808-767bbf49f092)
+
 # 5	Recommendations
 ## 5.1	Cloud vs non-cloud solutions
 It is recommended that the company should adopt cloud solutions as:\
