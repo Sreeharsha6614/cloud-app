@@ -1,15 +1,15 @@
 
  
 Table of Contents
-1	Introduction	2
-2	Enterprise background	3
-3	Current IT Setup	4
-4	Deployment Procedure	5
-5	Recommendations	10
-5.1	Cloud vs non-cloud solutions	10
-5.2	Justification for Recommendation	11
-6	Conclusion	12
-7	References	13
+1	Introduction
+2	Enterprise background
+3	Current IT Setup	
+4	Deployment Procedure
+5	Recommendations
+5.1	Cloud vs non-cloud solutions
+5.2	Justification for Recommendation
+6	Conclusion
+7	Reference
 
 
  
